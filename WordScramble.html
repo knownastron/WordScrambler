@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            .myDiv {
-                border: 5px outset black;
-                background-color: aqua;
-                text-align: center;
-            }
-        </style>
-        <title>WordScramble</title>
-
+        <title>WordScrambler</title>
     </head>
     <script src="WordScramble.js"></script>
-    <body onload="scramble()">
-        <h1>Guess the Word!</h1>
-        <div class="myDiv">
-            <h1 id="scrambledword"></h1>
-            <label for="textbox">What is the word?</label>
-            <input type="text" id="answer">
-            <button onclick="result()">Enter</button>
-        </div>
-        <p id="displayResult"></p>
-       
 
+    <body>
+        <h1>WordScrambler</h1>
+        <img src="mixed.webp">
+        <button onclick="navigateToPage()">Play</button>
     </body>
 </html>

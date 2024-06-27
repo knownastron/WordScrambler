@@ -48,6 +48,7 @@ function result(){
         checkButtons = true;
     }
 }
+
 function navigateToPage(){
     window.location.href = "WordScramble.html";
 }

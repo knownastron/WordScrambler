@@ -1,3 +1,4 @@
+
 document.addEventListener("keydown", event => {
     if(event.key == "Enter"){
         result();
@@ -14,7 +15,7 @@ function result(){
             createButtons();
         }
 }
-
+/*
 function createButtons(){
     const newButton = document.createElement('button');
     newButton.textContent = 'Play Again';
@@ -31,8 +32,9 @@ function createButtons(){
     });
     
     isThereButtons = true;
-    
+
 }
+*/
 function navigateToPage(){
     window.location.href = "WordScramble.html";
    

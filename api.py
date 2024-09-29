@@ -1,3 +1,4 @@
+
 #GET - GET AN INFORMATION
 #POST - CREATE SOMETHING NEW
 #PUT - UPDATE SOMETHING THAT ALREADY EXIST
@@ -37,4 +38,4 @@ async def result(answer :str):
    else:
       return {"message": "Wrong!"}
 
-      
+'''

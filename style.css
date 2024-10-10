@@ -8,13 +8,32 @@ body{
     margin: 0;
 }
 
-.input-part{
+#game-page{
     background-color: white;
     height: 45vh;
     border: 1px solid black;
     border-radius: 7px;
     width: 350px;
+    display: none;
+    border: 0;
     
+}
+
+#start{
+    
+    background-color: white;
+    height: 20vh;
+    width: 300px;
+    border-radius: 7px;
+    border: 1px solid black;
+    display: block;
+    border: 0;
+
+
+}
+
+header.intro{
+    text-align: center;
 }
 
 header{
@@ -23,11 +42,13 @@ header{
     font-size: 20px;
     border-bottom: 1px solid black;
     padding: 15px;
+    text-align: center;
+    
 }
 
 .scramble-word{
     font-family: Poppins;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     letter-spacing: 15px;
     text-align: center;
@@ -36,6 +57,8 @@ header{
 .hint{
     font-family: Poppins;
     margin-left: 15px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 input{
@@ -47,20 +70,89 @@ input{
     font-size: 20px; 
 }
 
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
 .refresh{
     font-family: Poppins;
     height: 50px;
-    width: 50%;
-    margin-left: 15px;
+    width: 150px;
     background-color: burlywood;
     outline: none;
     font-size: 15px;
+    border: 0;
+}
+.quit{
+   
+    font-family: Poppins;
+    height: 50px;
+    background-color: lightpink;
+    outline: none;
+    width: 150px;
+    border: 0;
 }
 
 .score{
     font-family: Poppins;
     margin-left: 15px;
+    
+}
+
+.start-game{
+    
+    height: 40px;
+    background-color: lightgreen;
+    outline: none;
+    font-family: Poppins;
+    width: 60%;
+    border-radius: 4px;  
+    position: relative;
+    left: 20%;
+    top: 10%;  
+    cursor: pointer;
+    border: 0;
 }
 
 
+.popup{
+    width: 50%;
+    background-color: white;
+    height: 20vh;
+    left: 50%;
+    border-radius: 7px;
+    position:absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 50%;
+    visibility: hidden;
+    
+    
+}
+
+.result{
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.popup button{
+    font-family: Poppins;
+    width: 100px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+    
+}
+
+.open-popup{
+    visibility: visible;
+
+}
 

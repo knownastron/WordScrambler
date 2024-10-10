@@ -22,14 +22,33 @@ app.add_middleware(
 wordStorage = ["apple", "plane", "orange", "tiger", "soccer", "basketball", "whale", "water", "lebron", "lion", "hippo", "bottle", "kyrie"]
 randomWord = ''
 
+wordHints = {
+   "apple": "a red fruit",
+   "plane": "a moving object in the sky",
+   "orange": "a citrus fruit",
+   "tiger": "a striped animal",
+   "soccer": "a sport played with your feet",
+   "basketball": "a sport played with two nets",
+   "whale": "a huge aquatic mammal",
+   "water": "a liquid substance",
+   "lebron": "the goat in basketball",
+   "lion": "king of the jungle",
+   "hippo": "a big swamp animal",
+   "bottle": "a object used to contain liquids",
+   "kyrie": "best ball handler in basketball"
+}
+
 @app.get("/scramble/{word_id}")
 async def scramble_word(word_id: int):
    global randomWord
    randomWord = wordStorage[word_id]
+   hint = wordHints[randomWord]
    wordInList = list(randomWord)
    shuffle(wordInList)
    scrambledWord = ''.join(wordInList)
-   return {"message": scrambledWord}
+  
+   return {"message": scrambledWord, "hint": hint}
+   
 
 @app.get("/user_answer/{answer}")
 async def result(answer :str):

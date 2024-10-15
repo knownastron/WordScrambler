@@ -19,7 +19,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-wordStorage = ["apple", "plane", "orange", "tiger", "soccer", "basketball", "whale", "water", "lebron", "lion", "hippo", "bottle", "kyrie"]
+wordStorage = [
+   "apple",
+   "plane",
+   "orange", 
+   "tiger", 
+   "soccer", 
+   "basketball", 
+   "whale", 
+   "water", 
+   "lebron", 
+   "lion", 
+   "hippo", 
+   "bottle", 
+   "kyrie"
+   ]
 randomWord = ''
 
 wordHints = {

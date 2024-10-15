@@ -24,13 +24,16 @@
                     <button class="refresh" onclick="refresh()">Refresh Word</button>
                     <button class="quit" onclick="quitGame()">Quit Game</button>
                 </section>
-                <p class="score" id="point">Score: 0</p>
+                <p class="score" id="point"></p>
             </section>
             <section class="popup" id="popup">
                 <p class="result" id="results"></p>
-                <button id="refresh" onclick="closePopup('refresh')">Next Word</button>
-                <button id="quit" onclick="closePopup('quit')">Quit Game</button>
-        
+                <div class="button-container">
+                    <button id="tryAgain" onclick="closePopup('tryAgain')">Try Again</button>
+                    <button id="nextWord" onclick="closePopup('nextWord')">Next Word</button>
+                    <button id="quit" onclick="closePopup('quit')">Quit Game</button>
+                </div>
+                    
             
             </section>
         </div>

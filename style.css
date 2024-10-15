@@ -118,25 +118,37 @@ input{
 
 
 .popup{
-    width: 50%;
+    width: 40%;
     background-color: white;
     height: 20vh;
     left: 50%;
     border-radius: 7px;
-    position:absolute;
+    position: absolute;
     text-align: center;
     transform: translate(-50%, -50%);
     top: 50%;
     right: 50%;
     visibility: hidden;
-    
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .result{
     font-family: Poppins;
     font-size: 30px;
     font-weight: 500;
+    margin-bottom: 20px;
+    
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    
 }
 
 .popup button{
@@ -149,6 +161,15 @@ input{
     border: 0;
     font-weight: 400;
     
+}
+
+#nextWord{
+    display: none;
+    
+}
+
+#tryAgain{
+    display: none;
 }
 
 .open-popup{
